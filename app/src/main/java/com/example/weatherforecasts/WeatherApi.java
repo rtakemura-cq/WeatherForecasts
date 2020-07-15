@@ -13,6 +13,8 @@ public class WeatherApi {
     private static final String USER_AGENT = "WeatherForecasts Sample";
     private static final String URL = "http://weather.livedoor.com/forecast/webservice/json/v1?city=";
 
+//    WeatherApiにgetWeatherメソッドを追加する。getWeatherメソッドは、引数pointIdの示す天気情報をサーバーから取得する。
+//    また、getWeatherメソッドは、静的メソッドなので、WeatherApiクラスをインスタンス化しなくても呼び出すことができる。
     public static String getWeather(Context context, String pointId)
             throws IOException {
 
